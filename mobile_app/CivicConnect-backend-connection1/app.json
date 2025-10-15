@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "CivicReport",
+    "slug": "civic-report-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to camera to capture photos of civic issues.",
+        "NSMicrophoneUsageDescription": "This app needs access to microphone to record audio descriptions of issues.",
+        "NSLocationWhenInUseUsageDescription": "This app needs location access to automatically tag the location of reported issues.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.projectzero.civicreportapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.projectzero.civicreportapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "civic-report",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow CivicReport to access your camera to capture photos of civic issues."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow CivicReport to use your location to automatically tag reported issues."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow CivicReport to access your microphone to record audio descriptions."
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-audio",
+      "expo-video"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7f81bc6c-010d-4bb5-a850-180ff074213b"
+      }
+    }
+  }
+}

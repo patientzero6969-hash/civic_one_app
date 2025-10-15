@@ -1,0 +1,13 @@
+expo
+expo-location
+expo-av
+expo-camera
+expo-image-picker
+expo-router
+@react-native-picker/picker
+react
+react-native
+react-native-chart-kit
+react-native-svg
+react-native-maps
+@expo/vector-icons
