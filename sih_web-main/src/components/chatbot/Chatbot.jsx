@@ -32,7 +32,7 @@ export default function Chatbot() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/chat/query', {
+      const response = await fetch('https://civic-one-app.vercel.app/chat/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
